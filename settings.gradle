@@ -1,0 +1,2 @@
+rootProject.name = "System_Dev_Lab"
+include ':app'
