@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.system_dev_lab.R;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override

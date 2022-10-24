@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.System_Dev_Lab">
         <activity android:name="Activities.LoginActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
