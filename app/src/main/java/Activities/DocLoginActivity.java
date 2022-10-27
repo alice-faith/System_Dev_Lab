@@ -3,6 +3,8 @@ package Activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.system_dev_lab.R;
@@ -10,7 +12,8 @@ import com.example.system_dev_lab.R;
 public class DocLoginActivity extends AppCompatActivity {
 
     //Declare UI
-    private TextView emailEtDocL, passwordEtDocL, signInDocBtn;
+     EditText emailEtDocL, passwordEtDocL;
+     Button signInDocBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
