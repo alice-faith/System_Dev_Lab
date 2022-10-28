@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DOCTOR APPOINTMENT APP"
+        android:text="GYNECOLOGY APPOINTMENT APP"
         android:textSize="15sp"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
