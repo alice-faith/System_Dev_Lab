@@ -5,15 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="Activities.BookSelectDateActivity">
+    tools:context="Activities.BookSelectTimeActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" APPOINTMENT APP"
+        android:text="BOOK APPOINTMENT"
         android:textSize="15sp"
         android:textAlignment="center"
-        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/abril_fatface_regular"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/dateBKTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="04_08_2022"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
         android:fontFamily="@font/abril_fatface_regular"
         android:layout_marginTop="15dp"/>
 
@@ -28,94 +39,65 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SELECT TYPE OF SERVICE"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:layout_gravity="center_horizontal"/>
-
-        <Spinner
-            android:id="@+id/serviceSpinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" Select date"
+            android:text=" Select time"
             android:textSize="15sp"
             android:textAlignment="center"
-            android:gravity="center_horizontal"
-            android:fontFamily="@font/abril_fatface_regular"
-            android:layout_marginTop="60dp"/>
-
-        <TextView
-            android:id="@+id/dateTv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Wednesday, 25 May 2022"
-            android:visibility="invisible"
-            android:textSize="15sp"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
             android:fontFamily="@font/abril_fatface_regular"
             android:layout_marginTop="15dp"/>
 
         <TextView
-            android:id="@+id/dateTv2"
+            android:id="@+id/timeTv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Date"
-            android:visibility="invisible"
-            android:textSize="15sp"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
+            android:layout_height="18dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/abril_fatface_regular"
-            android:layout_marginTop="15dp"/>
+            android:text="Time"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:visibility="invisible" />
 
         <TextView
-            android:id="@+id/errorMsgTv"
+            android:id="@+id/errorTimeMsgTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" ERROR: You have picked a passed date"
+            android:text=" ERROR: Please pick time slots"
             android:textColor="#F60606"
             android:visibility="invisible"
             android:textSize="15sp"
             android:textAlignment="center"
-            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
             android:fontFamily="@font/abril_fatface_regular"
             android:layout_marginTop="15dp"/>
 
-
         <Button
-            android:id="@+id/pickDateBtn"
+            android:id="@+id/pickTimeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="15dp"
-            android:text="PICK DATE"
+            android:text="PICK TIME"
             />
 
         <TextView
-            android:id="@+id/nextTv"
+            android:id="@+id/completeTimeTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="NEXT"
+            android:text="COMPLETE"
             android:background="@drawable/rectangle00"
             android:layout_margin="10dp"
-            android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
             android:padding="20dp"
             android:textSize="15sp"
             android:textAlignment="center"
-            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
             android:fontFamily="@font/abril_fatface_regular"
             android:layout_marginTop="15dp"/>
 
 
 
-
     </LinearLayout>
+
 
 
 </LinearLayout>
