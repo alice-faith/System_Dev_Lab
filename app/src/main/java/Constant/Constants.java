@@ -8,12 +8,12 @@ public class Constants {
     public static Date AppointmentDateLong;
     public static String patientName = "";
     public static String [] emailSubject = {
-            "SPECTACLES READY FOR COLLECTION",
-            "APOLOGY FOR THE DELAY"
+            "THANK YOU FOR VISITING US",
+
     };
     public static String[] emailBody = {
-            "Dear Patient, your spectacles are ready for collection, kindly collect them as from tomorrow. Thank you for your patience",
-            "Dear Patient, we apologize for the delay and inconvenience, we are doing all we can to process your frames on time. Thank you for your patience"
+            "Dear Patient, Thank you for visiting our clinic. Hoping it was a nice experience",
+
     };
 
 }

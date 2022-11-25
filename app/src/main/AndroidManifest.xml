@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.System_Dev_Lab">
-        <activity android:name="Activities.NotifyPatientsActivity"></activity>
+        <activity android:name="Activities.SendEmailActivity"></activity>
+        <activity android:name="Activities.SpecificPatientFullDetailsActivity" />
+        <activity android:name="Activities.DiagnosisActivity" />
+        <activity android:name="Activities.NotifyPatientsActivity" />
         <activity android:name="Activities.AppointmentsActivity" />
         <activity android:name="Activities.DocHomeActivity" />
         <activity android:name="Activities.CompleteActivity" />

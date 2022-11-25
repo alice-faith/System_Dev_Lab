@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:contentPadding="5dp"
+    android:layout_marginTop="7dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/nameFDTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:text="Name:"
+            android:fontFamily="@font/abril_fatface_regular"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/dateFDTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:text="Date:"
+            android:fontFamily="@font/abril_fatface_regular"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
