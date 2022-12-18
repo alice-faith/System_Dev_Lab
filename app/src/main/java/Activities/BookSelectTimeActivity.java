@@ -31,12 +31,13 @@ import Constant.Constant;
 
 public class BookSelectTimeActivity extends AppCompatActivity {
     //Declaring Views and Variables
-    private TextView timeTv, errorTimeMsgTv, completeTimeTv, dateBKTv;
+    private TextView timeTv, errorTimeMsgTv, completeTimeTv, dateBKTv, proceedTv;
     private Button pickTimeBtn;
     String bookedTimeSlot;
     String name, email, phone, uid;
     FirebaseAuth firebaseAuth;
     ProgressDialog progressDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +50,11 @@ public class BookSelectTimeActivity extends AppCompatActivity {
         pickTimeBtn = findViewById(R.id.pickTimeBtn);
         completeTimeTv = findViewById(R.id.completeTimeTv);
         dateBKTv = findViewById(R.id.dateBKTv);
+        proceedTv = findViewById(R.id.proceedTv);
 
         //initializing firebase
         firebaseAuth = FirebaseAuth.getInstance();
+
 
         //progress dialog
         progressDialog = new ProgressDialog(this);
@@ -85,6 +88,15 @@ public class BookSelectTimeActivity extends AppCompatActivity {
                 validate();
             }
         });
+
+        //Handling proceedTv
+        proceedTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                saveOnMyDb();
+            }
+        });
+
 
 
     }
@@ -154,9 +166,13 @@ public class BookSelectTimeActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void unused) {
                         //success
-                        Toast.makeText(BookSelectTimeActivity.this, "Saved Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(BookSelectTimeActivity.this, "Saved OnMyClinic", Toast.LENGTH_SHORT).show();
 
-                        saveOnMyDb();
+                        //saveOnMyDb();
+                        progressDialog.dismiss();
+                        completeTimeTv.setVisibility(View.GONE);
+                        proceedTv.setVisibility(View.VISIBLE);
+
 
 
                     }

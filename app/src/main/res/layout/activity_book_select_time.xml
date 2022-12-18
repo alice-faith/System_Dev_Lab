@@ -91,6 +91,23 @@
             android:textSize="15sp"
             android:textAlignment="center"
             android:layout_gravity="center_horizontal"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+            android:fontFamily="@font/abril_fatface_regular"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/proceedTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROCEED TO HOME"
+            android:visibility="gone"
+            android:background="@drawable/rectangle00"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
             android:fontFamily="@font/abril_fatface_regular"
             android:layout_marginTop="15dp"/>
 
